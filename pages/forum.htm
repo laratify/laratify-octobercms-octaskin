@@ -1,0 +1,21 @@
+title = "Forum"
+url = "/forum"
+layout = "default"
+description = "The main forum page with all the channels."
+hidden = "0"
+
+[forumChannels]
+memberPage = "404"
+channelPage = "forum/channel"
+topicPage = "forum/topic"
+==
+
+<section>
+  <div class="row">
+    <div class="container">
+      <div class="lt-content clearfix">
+        {% component 'forumChannels' %}
+      </div>
+    </div>
+  </div>
+</section>

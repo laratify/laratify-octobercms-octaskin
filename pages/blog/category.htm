@@ -1,0 +1,35 @@
+title = "Blog Category"
+url = "/blog/category/:slug/:page?"
+layout = "default"
+description = "Viewing blog posts in a specific category."
+hidden = "0"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
+postsPerPage = "10"
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = "0"
+categoryPage = "blog/category"
+==
+
+<section>
+  <div class="row">
+    <div class="container">
+      <div class="lt-content clearfix">
+        <div class="col md8 s12">
+            {% partial 'blog/posts' %}
+        </div>
+        <div class="col md4 s12">
+            {% partial 'blog/categories' %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

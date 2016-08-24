@@ -1,0 +1,73 @@
+description = "Default layout"
+
+[session]
+security = "all"
+==
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title }}</title>
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="author" content="Laratify">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{ 'assets/images/icon.png'|theme }}" />
+
+    <!--Import Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Import FontAwesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--Theme Stylesheet-->
+    <link href="{{'assets/css/theme.css'|theme }}" rel="stylesheet">
+
+    <!--Applications Stylesheets-->
+    {% styles %}
+  </head>
+
+  <body class="{{ this.page.body_class }}">
+    <div id="lt-body-surround">
+      <!-- Header -->
+      <section id="lt-section-header" class="lt-nav-background">
+        {% partial "sections/navigation" %}
+      </section>
+
+      <!-- Page -->
+      <section id="lt-section-page">
+        {% page %}
+      </section>
+
+      <!-- Footer -->
+      <section id="lt-section-footer">
+        {% partial "sections/footer" %}
+      </section>
+
+      <!-- Copyright -->
+      <section id="lt-section-copyright">
+        {% partial "sections/copyright" %}
+      </section>
+
+      <!-- Social -->
+      <section id="lt-section-social">
+        {% partial "sections/social" %}
+      </section>
+    </div>
+
+    <!--Import jQuery and materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+    <!--Theme Javascript-->
+    <script src="{{'assets/javascript/theme.js'|theme }}"></script>
+
+    {% framework extras %}
+    {% scripts %}
+
+  </body>
+</html>

@@ -1,0 +1,9 @@
+name: Octaskin
+description: Free Modern and Clean OctoberCMS Theme based on Materialize CSS.
+author: Laratify
+homepage: 'http://www.laratify.com'
+code: octobercms-octaskin
+require:
+    - RainLab.User
+    - RainLab.Blog
+    - RainLab.Forum
