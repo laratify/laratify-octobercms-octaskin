@@ -2,5 +2,5 @@ name: "Octaskin"
 description: "Free Modern and Clean OctoberCMS Theme based on Materialize CSS."
 author: Laratify
 homepage: "https://www.laratify.com/"
-code: laratify-octobercms-octaskin
+code: octobercms-octaskin
 form: config/fields.yaml
