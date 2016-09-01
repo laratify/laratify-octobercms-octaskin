@@ -25,3 +25,4 @@ Free Modern and Clean OctoberCMS Theme based on Materialize CSS.
   - Optimized theme CSS format with SCSS format
   - Replaced Gumroad newsletter form with Mailchimp newsletter
   - Added more sample demo pages
+- 2.0.1: Fixed wrong partial path on default layout (Sep 01, 2016)
