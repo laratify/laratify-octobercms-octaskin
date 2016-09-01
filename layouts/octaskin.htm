@@ -31,7 +31,7 @@ description = "Octaskin Layout"
 
     <link href="{{ ['assets/scss/style.scss']|theme }}" rel="stylesheet">
 
-    {% partial "addons/css" %}
+    {% partial "_addons/css" %}
 
     {% styles %}
 
@@ -46,7 +46,7 @@ description = "Octaskin Layout"
       <section id="lt-navigation" class="lt-section section lt-no-background">
         <div class="lt-row row">
           <div class="lt-content lt-navigation-content">
-            {% partial "pages/all/navigation" %}
+            {% partial "pages-all/navigation" %}
           </div>
         </div>
       </section>
@@ -56,7 +56,7 @@ description = "Octaskin Layout"
       <section id="lt-footer" class="lt-section section">
         <div class="lt-container container">
           <div class="lt-content lt-footer-content">
-            {% partial "pages/all/footer" %}
+            {% partial "pages-all/footer" %}
           </div>
         </div>
       </section>
@@ -64,7 +64,7 @@ description = "Octaskin Layout"
       <section id="lt-copyright" class="lt-section section">
         <div class="lt-container container">
           <div class="lt-content lt-copyright-content">
-            {% partial "pages/all/copyright" %}
+            {% partial "pages-all/copyright" %}
           </div>
         </div>
       </section>
@@ -77,7 +77,7 @@ description = "Octaskin Layout"
       {% framework extras %}
     {% endif %}
 
-    {% partial "addons/js" %}
+    {% partial "_addons/js" %}
 
     {% scripts %}
 
