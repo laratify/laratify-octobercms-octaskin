@@ -22,7 +22,7 @@ description = "Octaskin Layout"
     {% endif %}
 
     {% if this.theme.load_material_icons %}
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     {% endif %}
 
     {% if this.theme.load_stroke7_icons %}
@@ -43,32 +43,20 @@ description = "Octaskin Layout"
   </head>
   <body class="lt-theme-{{ this.theme.config.code }} lt-layout-{{ this.layout.id }} lt-page-{{ this.page.id }}">
     <div id="lt-page-surround">
-      <section id="lt-navigation" class="lt-section section">
-        <div class="lt-container container">
-          <div class="lt-row row">
-            <div class="lt-content">
-              {% partial "navigation" %}
-            </div>
+      <section id="lt-navigation" class="lt-section section lt-no-background">
+        <div class="lt-row row">
+          <div class="lt-content lt-navigation-content">
+            {% partial "pages/all/navigation" %}
           </div>
         </div>
       </section>
 
-      <section id="lt-mainpage" class="lt-section section">
-        <div class="lt-container container">
-          <div class="lt-content lt-mainpage-content">
-            <div class="lt-row row">
-              <div class="lt-col col s12">
-                {% page %}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {% page %}
 
       <section id="lt-footer" class="lt-section section">
         <div class="lt-container container">
           <div class="lt-content lt-footer-content">
-            {% partial "footer" %}
+            {% partial "pages/all/footer" %}
           </div>
         </div>
       </section>
@@ -76,7 +64,7 @@ description = "Octaskin Layout"
       <section id="lt-copyright" class="lt-section section">
         <div class="lt-container container">
           <div class="lt-content lt-copyright-content">
-            {% partial "copyright" %}
+            {% partial "pages/all/copyright" %}
           </div>
         </div>
       </section>

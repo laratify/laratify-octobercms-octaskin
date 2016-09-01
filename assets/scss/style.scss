@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+// Reset
+@import "materialize/components/normalize";
+
+// Variables
+@import "theme/variables";
+
+// Materialize
+@import "materialize/materialize";
+
+// Theme Sections Styling
+@import "theme/sections";
+
+// Theme General Styling
+@import "theme/theme";
+
+// Custom Styling
+@import "theme/custom";

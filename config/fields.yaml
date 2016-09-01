@@ -1,0 +1,330 @@
+tabs:
+  fields:
+
+    ####################################################
+    # Tab: Info
+    ####################################################
+
+    website_name:
+      tab: Info
+      label: Website Name
+      type: text
+      default: Octaskin
+
+    website_author:
+      tab: Info
+      label: Author
+      type: text
+      default: Laratify
+
+    website_url:
+      tab: Info
+      label: URL
+      type: text
+      default: "http://demo.laratify.dev/octobercms/?theme=octaskin"
+
+    description:
+      tab: Info
+      label: Description
+      type: textarea
+      default: "Free Modern and Clean OctoberCMS Theme based on Materialize CSS."
+
+    keywords:
+      tab: Info
+      label: Keywords
+      type: taglist
+      separator: comma
+      default: octaskin,laratify,october,octobercms,themes,templates,free octobercms themes
+      options:
+        - octaskin
+        - laratify
+        - october
+        - octobercms
+        - themes
+        - templates
+        - free octobercms themes
+
+    ####################################################
+    # Tab: Assets
+    ####################################################
+
+    load_google_fonts:
+      tab: Assets
+      label: Google Fonts
+      type: switch
+      default: true
+
+    google_font_family:
+      tab: Assets
+      label: Google Font Family
+      type: text
+      comment: Separate each font with vertical slash |
+      default: "Roboto+Slab:300,400,700|Raleway:300,300i,400,400i,700,700i"
+      trigger:
+        action: show
+        field: load_google_fonts
+        condition: checked
+
+    load_fontawesome:
+      tab: Assets
+      label: FontAwesome Icons Font
+      type: switch
+      default: true
+
+    load_material_icons:
+      tab: Assets
+      label: Material Icons Font
+      type: switch
+      default: true
+
+    load_stroke7_icons:
+      tab: Assets
+      label: Stroke 7 Icons Font
+      type: switch
+      default: true
+
+    load_jQuery:
+      tab: Assets
+      label: jQuery
+      type: switch
+      default: true
+
+    jQuery_version:
+      tab: Assets
+      label: jQuery Version
+      type: dropdown
+      default: 2.2.4
+      options:
+        3.1.0: 3.1.0
+        2.2.4: 2.2.4
+        1.12.4: 1.12.4
+      trigger:
+        action: show
+        field: load_jQuery
+        condition: checked
+
+    load_octobercms_framework:
+      tab: Assets
+      label: OctoberCMS Front-end Javascript Framework
+      type: switch
+      default: false
+
+    ####################################################
+    # Tab: Styles
+    ####################################################
+
+    primary_color:
+      tab: Styles
+      label: Primary Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#ff5722"
+      assetVar: "lt-primary-color"
+
+    secondary_color:
+      tab: Styles
+      label: Secondary Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#2196f3"
+      assetVar: "lt-secondary-color"
+
+    navigation_background_color:
+      tab: Styles
+      label: Navigation Background Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#ff5722"
+      assetVar: "lt-navigation-background-color"
+
+    navigation_text_color:
+      tab: Styles
+      label: Navigation Text Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#ffffff"
+      assetVar: "lt-navigation-text-color"
+
+    slideshow_background_color:
+      tab: Styles
+      label: Slideshow Background Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#455a64"
+      assetVar: "lt-slideshow-background-color"
+
+    slideshow_text_color:
+      tab: Styles
+      label: Slideshow Text Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#ffffff"
+      assetVar: "lt-slideshow-text-color"
+
+    header_background_color:
+      tab: Styles
+      label: Header Background Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#37474f"
+      assetVar: "lt-header-background-color"
+
+    header_text_color:
+      tab: Styles
+      label: Header Text Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#ffffff"
+      assetVar: "lt-header-text-color"
+
+    feature_background_color:
+      tab: Styles
+      label: Feature Background Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#ffffff"
+      assetVar: "lt-feature-background-color"
+
+    feature_text_color:
+      tab: Styles
+      label: Feature Text Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#686868"
+      assetVar: "lt-feature-text-color"
+
+    utility_background_color:
+      tab: Styles
+      label: Utility Background Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#eceff1"
+      assetVar: "lt-utility-background-color"
+
+    utility_text_color:
+      tab: Styles
+      label: Utility Text Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#686868"
+      assetVar: "lt-utility-text-color"
+
+    mainpage_background_color:
+      tab: Styles
+      label: MainPage Background Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#ffffff"
+      assetVar: "lt-mainpage-background-color"
+
+    mainpage_text_color:
+      tab: Styles
+      label: MainPage Text Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#686868"
+      assetVar: "lt-mainpage-text-color"
+
+    bottom_background_color:
+      tab: Styles
+      label: Bottom Background Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#eceff1"
+      assetVar: "lt-bottom-background-color"
+
+    bottom_text_color:
+      tab: Styles
+      label: Bottom Text Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#686868"
+      assetVar: "lt-bottom-text-color"
+
+    extension_background_color:
+      tab: Styles
+      label: Extension Background Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#ffffff"
+      assetVar: "lt-extension-background-color"
+
+    extension_text_color:
+      tab: Styles
+      label: Extension Text Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#686868"
+      assetVar: "lt-extension-text-color"
+
+    footer_background_color:
+      tab: Styles
+      label: Footer Background Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#455a64"
+      assetVar: "lt-footer-background-color"
+
+    footer_text_color:
+      tab: Styles
+      label: Footer Text Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#b0bec5"
+      assetVar: "lt-footer-text-color"
+
+    copyright_background_color:
+      tab: Styles
+      label: Copyright Background Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#37474f"
+      assetVar: "lt-copyright-background-color"
+
+    copyright_text_color:
+      tab: Styles
+      label: Copyright Text Color
+      type: colorpicker
+      availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
+      default: "#78909c"
+      assetVar: "lt-copyright-text-color"
+
+    ####################################################
+    # Tab: Addons
+    ####################################################
+
+    load_animate_css:
+      tab: Addons
+      label: Animate CSS
+      type: switch
+      default: true
+
+    load_wow_js:
+      tab: Addons
+      label: WOW JS
+      type: switch
+      default: true
+
+    load_owl_carousel:
+      tab: Addons
+      label: Owl Carousel
+      type: switch
+      default: true
+
+    ####################################################
+    # Tab: Advanced
+    ####################################################
+
+    custom_css:
+      tab: Advanced
+      label: Custom CSS
+      type: codeeditor
+      size: huge
+      language: css
+
+    custom_js:
+      tab: Advanced
+      label: Custom JS
+      type: codeeditor
+      size: huge
+      language: javascript

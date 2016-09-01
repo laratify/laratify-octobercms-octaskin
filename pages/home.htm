@@ -1,25 +1,53 @@
-title = "Octaskin"
-body_class = "lt-home-page"
+title = "Home"
 url = "/"
-layout = "default"
-description = "Welcome to the Octaskin theme for OctoberCMS!"
-hidden = "0"
+layout = "octaskin"
+is_hidden = 0
 ==
 
-<!-- Showcase -->
-{% partial "sections/showcase" %}
+<section id="lt-slideshow" class="lt-section lt-section-fullwidth section">
+  <div class="lt-container container">
+    <div class="lt-content lt-slideshow-content">
+      {% partial "pages/home/slideshow" %}
+    </div>
+  </div>
+</section>
 
-<!-- Feature -->
-{% partial "sections/feature" %}
+<section id="lt-feature" class="lt-section section">
+  <div class="lt-container container">
+    <div class="lt-content lt-feature-content">
+      {% partial "pages/home/feature" %}
+    </div>
+  </div>
+</section>
 
-<!-- Top -->
-{% partial "sections/top" %}
+<section id="lt-utility" class="lt-section section">
+  <div class="lt-container container">
+    <div class="lt-content lt-utility-content">
+      {% partial "pages/home/utility" %}
+    </div>
+  </div>
+</section>
 
-<!-- Utility -->
-{% partial "sections/utility" %}
+<section id="lt-mainpage" class="lt-section lt-section-fullwidth section">
+  <div class="lt-container container">
+    <div class="lt-content lt-mainpage-content">
+      {% partial "pages/home/mainpage" %}
+    </div>
+  </div>
+</section>
 
-<!-- Extension -->
-{% partial "sections/extension" %}
+<section id="lt-bottom" class="lt-section section">
+  <div class="lt-container container">
+    <div class="lt-content lt-bottom-content">
+      {% partial "pages/home/bottom" %}
+    </div>
+  </div>
+</section>
 
-<!-- Expanded -->
-{% partial "sections/expanded" %}
+<section id="lt-extension" class="lt-section section">
+  <div class="lt-container container">
+    <div class="lt-content lt-extension-content">
+      {% partial "pages/home/extension" %}
+    </div>
+  </div>
+</section>
