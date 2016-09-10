@@ -9,6 +9,10 @@ Free Modern and Clean OctoberCMS Theme based on Materialize CSS.
 - Materialize CSS - http://materializecss.com/
 
 ### Thank You for Using Laratify Themes!
+
+If you like Octaskin, please rate it 5 stars here:
+https://octobercms.com/theme/laratify-octobercms-octaskin
+
 - Laratify - http://www.laratify.com/
 - Twitter: https://twitter.com/laratify
 - Facebook: https://www.facebook.com/laratify
@@ -25,5 +29,5 @@ Free Modern and Clean OctoberCMS Theme based on Materialize CSS.
   - Optimized theme CSS format with SCSS format
   - Replaced Gumroad newsletter form with Mailchimp newsletter
   - Added more sample demo pages
-- 2.0.1: Fixed wrong partial path on default layout (Sep 01, 2016)
-- 2.1.0: Redo the partial subdirectory structure due to OctoberCMS limitation (Sep 01, 2016)
+- **2.0.1: Fixed wrong partial path on default layout (Sep 01, 2016)**
+- **2.1.0: Redo the partial subdirectory structure due to OctoberCMS limitation (Sep 01, 2016)**
