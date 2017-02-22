@@ -132,6 +132,7 @@ p {
     transition: all 0.25s ease;
     ul li {
       a {
+	color: $lt-navigation-text-color;
       	font-weight: 700;
       }
       &:hover,
