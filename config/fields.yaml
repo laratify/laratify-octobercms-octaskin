@@ -75,7 +75,7 @@ tabs:
       tab: Assets
       label: Material Icons Font
       type: switch
-      default: true
+      default: false
 
     load_stroke7_icons:
       tab: Assets
@@ -118,7 +118,7 @@ tabs:
       label: Primary Color
       type: colorpicker
       availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
-      default: "#ff5722"
+      default: "#2196f3"
       assetVar: "lt-primary-color"
 
     secondary_color:
@@ -126,7 +126,7 @@ tabs:
       label: Secondary Color
       type: colorpicker
       availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
-      default: "#2196f3"
+      default: "#ffeb3b"
       assetVar: "lt-secondary-color"
 
     navigation_background_color:
@@ -134,7 +134,7 @@ tabs:
       label: Navigation Background Color
       type: colorpicker
       availableColors: ["#f44336","#9c27b0","#2196f3","#cddc39","#ffc107","#607d8b","#808080","#383838","#000000","#ffffff"]
-      default: "#ff5722"
+      default: "#2196f3"
       assetVar: "lt-navigation-background-color"
 
     navigation_text_color:
