@@ -75,7 +75,7 @@ tabs:
       tab: Assets
       label: Material Icons Font
       type: switch
-      default: true
+      default: false
 
     load_stroke7_icons:
       tab: Assets
